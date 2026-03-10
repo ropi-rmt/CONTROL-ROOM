@@ -1,6 +1,7 @@
 const usuarios = [
     { user: "admin", pass: "1234" },
-    { user: "rocio", pass: "abcd" }
+    { user: "rocio", pass: "abcd" },
+    { user: "pablo", pass: "1234" }
 ];
 
 const form = document.getElementById("loginForm");
