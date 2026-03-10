@@ -38,6 +38,63 @@
     box-sizing: border-box;
 
 }
+/*LOGIN PAGE*/
+
+/*COMENTARIOS*/
+
+
+.tituloComentario {
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #1239e6;
+}
+
+.formComentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.formComentario input,
+.formComentario textarea {
+    font-family: "Geom", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.formComentario button {
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1239e6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formComentario button:hover {
+    background-color: #5470ec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*CSS NAVBAR LATERAL*/
 body{
