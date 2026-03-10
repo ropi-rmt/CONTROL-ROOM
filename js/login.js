@@ -20,9 +20,16 @@ form.addEventListener("submit", function(e) {
 
         localStorage.setItem("login", "true");
 
-        window.location.href = "./pages/main.html";
+        Swal.fire({
+            title: "Login correcto",
+            text: "Bienvenido a la página",
+            icon: "success"
+        }).then(() => {
+            window.location.href = "./pages/main.html";
+        });
 
     } else {
         document.getElementById("error").textContent = "Usuario o contraseña incorrectos";
     }
+
 });
