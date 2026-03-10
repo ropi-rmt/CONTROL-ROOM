@@ -1,0 +1,27 @@
+const usuarios = [
+    { user: "admin", pass: "1234" },
+    { user: "rocio", pass: "abcd" }
+];
+
+const form = document.getElementById("loginForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const usuario = document.getElementById("usuario").value;
+    const password = document.getElementById("password").value;
+
+    const usuarioValido = usuarios.find(u =>
+        u.user === usuario && u.pass === password
+    );
+
+    if (usuarioValido) {
+
+        localStorage.setItem("login", "true");
+
+        window.location.href = "./pages/main.html";
+
+    } else {
+        document.getElementById("error").textContent = "Usuario o contraseña incorrectos";
+    }
+});

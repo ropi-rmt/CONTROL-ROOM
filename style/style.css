@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cookie&family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cookie&family=Eagle+Lake&family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*DATA DE LAS FUENTES*/
+
+/*
+.borel-regular {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.geom-<uniquifier> {
+    font-family: "Geom", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  FONT DE ESTILO CELTA
+  .eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  */
+
+* {
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*CSS NAVBAR LATERAL*/
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#2c3e50;
+    padding:20px;
+    color:white;
+    
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:15px 0;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/*CSS SUBMENU*/
+.submenu{
+
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+
+}
+
+.submenu.activo{
+
+    max-height:200px;
+
+}
+
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    height: 200px;
+    position: sticky;
+    padding-top: 50px;
+
+    /*border-bottom: 1px solid #e5e5e5;*/
+    top: 0;
+    z-index: 1000;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #b3e6ae;
+    height: 100px;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 30px;*/
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+.nav-left li {
+    position: relative;
+}
+
+.nav-left a {
+    color: #1239e6;
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    text-decoration: none;
+}
+
+.nav-left a:hover {
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 10px;*/
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+.nav-right a {
+    color: #1239e6;
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    color: white;
+}
+
+.logo1 img {
+    height: 200px;
+}
+
+/*DROPDOWN*/
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 20px;
+    color: #1239e6;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #eee;
+}
+
+/*MAIN - ESTILOS COMUNES PARA TODOS (O CASI!)*/
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+h2 {
+    color: #1239e6;
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+
+}
+
+h2.bienvenida {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding: 10px;
+    margin: 20px;
+}
+
+h3 {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.copete {
+    background-color: rgb(177, 177, 177);
+}
+
+h4 {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+p {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+}
+
+.link {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: 1239e6;
+}
+
+.imagenCiudad {
+    width: 50vw;
+}
+
+.descubre {
+    color: white;
+    font-family: "Geom", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #5470ec;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*HISTORIA*/
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/*CURIOSIDADES*/
+
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.listaTexto {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+}
+
+/*CONTACTO*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#miFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.introContacto{
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+    text-align: center; 
+}
+label {
+    color: white;
+    font-family: "Geom", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #5470ec;
+    padding: 5px;
+    margin: 5px;
+}
+
+.buttonform {
+    color: #1239e6;
+    font-family: "Geom", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #5470ec;
+    padding: 5px;
+    margin: 5px;
+}
+
+.buttonform:hover {
+    color: #1239e6;
+    opacity: 50%;
+}
+
+#miFormulario input,
+#miFormulario textarea{
+    font-family: "Geom", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#miFormulario input.buttonform  {
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1239e6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#miFormulario label{
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5470ec;
+    color: white; 
+}
+
+
+/*ESTILO DE PAGINAS BAJO CONSTRUCCION*/
+
+.alojamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/*COMENTARIOS*/
+
+
+.tituloComentario {
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #1239e6;
+}
+
+.formComentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.formComentario input,
+.formComentario textarea {
+    font-family: "Geom", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+
+.formComentario button {
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1239e6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formComentario button:hover {
+    background-color: #5470ec;
+}
+
+/* Tarjetas de comentarios */
+.comentario-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 400px;
+    align-items: center;
+
+}
+
+.comentario-nombre {
+    font-family: "Geom", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1239e6;
+}
+
+.comentario-texto {
+    font-family: "Geom", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.lista-comentarios {
+    background-color: #5470ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECCIÓN DE BÚSQUEDA */
+
+.busqueda {
+    background-color: #5470ec;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.busqueda h3 {
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #1239e6;
+}
+
+.busqueda p {
+    font-family: "Geom", sans-serif;
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: rgb(44, 44, 44);
+}
+
+.busqueda-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.busqueda-form input {
+    width: 320px;
+    max-width: 90%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.busqueda-form button {
+    padding: 15px 30px;
+    font-family: "Geom", sans-serif;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #1239e6;
+    color: white;
+}
+
+.busqueda-form button:hover {
+    background-color: #1f5f2a;
+}
+
+
+.busqueda-form:hover {
+    color: #5470ec;
+}
+
+/*PREFOOTER*/
+.preFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    background-color: #5470ec;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    color: #1239e6;
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*CARD LUGARES*/
+
+.galeria {
+    display: flex;
+
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardCiudad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 700px;
+    background-color: #1239e6;
+
+}
+
+.tituloCard {
+    color: rgb(44, 44, 44);
+    font-family: "Geom", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 20px;
+
+}
+
+.descripcionCard {
+    color: darkgreen;
+    font-family: "Geom", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+
+}
+
+.botonCard {
+    padding: 15px 30px;
+    font-family: "Geom", sans-serif;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+    margin: 20px;
+}
+
+.imagenCardCiudad {
+    width: 25vw;
+
+}

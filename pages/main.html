@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/comments.js"></script>
+    <title>the CR crowd</title>
+
+    <link rel="shortcut icon" href="./assets/Trebol.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./style/style.css">
+
+
+</head>
+
+<body>
+    <!---- dentro del header me gustaria tener el logo en el medio y la navegacion si se puede hacerlo con menu desplegable 
+
+    las secciones pueden ser:
+    historia de irlanda/los mejores lugares para visitar/comida y alojamiento/consejos
+    
+    tener como referencia https://www.mibauldeblogs.com/ -->
+
+    <header class="header">
+
+       <nav class="navbar">
+            <ul class="nav-left">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/historia.html">Historia de Irlanda</a></li>
+                <li class="dropdown">
+                    <a href="./pages/lugares.html">Qué Visitar</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./pages/lugares/cork.html">Cork</a></li>
+                        <li><a href="./pages/lugares/dingle.html">Dingle</a></li>
+                        <li><a href="./pages/lugares/donegal.html">Donegal</a></li>
+                        <li><a href="./pages/lugares/dublin.html">Dublín</a></li>
+                        <li><a href="./pages/lugares/galway.html">Galway</a></li>
+                        <li><a href="./pages/lugares/killarney.html">Killarney</a></li>
+                        <li><a href="./pages/lugares/kilkenny.html">Kilkenny</a></li>
+                        <li><a href="./pages/lugares/sligo.html">Sligo</a></li>
+                        <li><a href="./pages/lugares/westport.html">Westport</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="logo1">
+                <a href="./index.html"><img src="./assets/Logo-1.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-right">
+                <li class="dropdown"><a href="./pages/curiosidades.html">Curiosidades</a>
+                </li>
+
+                <li class="dropdown"><a href="./pages/tips.html">Consejos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./pages/alojamiento.html">Alojamiento</a></li>
+                        <li><a href="./pages/comida.html">Comida</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">☰</button>
+
+        </nav>
+
+      
+    </header>
+
+
+
+    <main>
+        <div class="inicio">
+<h4> Bienvenidos a "Where the Fields are Green" 🇮🇪</h4>
+            <h2 class="bienvenida">
+                Bienvenido a este rincón dedicado a descubrir Irlanda, una isla donde la historia se mezcla con la
+                magia, los paisajes parecen sacados de un cuento y cada pueblo guarda una historia lista para ser
+                contada. Desde los acantilados que se pierden en el Atlántico hasta las calles empedradas de Dublín
+                llenas de música y tradición, Irlanda invita a explorarla sin prisa. En este blog te llevaré por sus
+                rincones más emblemáticos, sus leyendas, su cultura vibrante y la calidez de su gente. ¿Listo para
+                comenzar este viaje verde esmeralda? 🌿✨
+
+          
+            </h2>
+            <img src="./assets/Inicio1.webp" alt="Collage de Fotos de Irlanda">
+
+            <section class="sectionComentarios">
+                <h3 class="tituloComentario">Dejanos tu comentario</h3>
+    
+                <form id="formComentario" class="formComentario">
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    <textarea id="comentario" placeholder="Escribí tu comentario" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+    
+                <div id="listaComentarios" class="lista-comentarios">
+                    <h3 class="tituloComentario">Lo que dicen de nosotros!</h3>
+                </div>
+            </section>
+
+            <!-- en el footer o final de main me gustaria q hubiera una seccion de busqueda como en https://happytowander.com/travel-guides/-->
+            <section class="busqueda">
+                <h3>¿A dónde querés viajar ahora?</h3>
+                <p>Buscá ciudades, consejos o destinos de Irlanda</p>
+
+                <form class="busqueda-form">
+                    <input type="search" name="s" placeholder="Ej: Galway, Cork, consejos..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Hecho por Ropi</h3>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
