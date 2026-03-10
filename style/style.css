@@ -49,16 +49,16 @@
 .tituloLogin {
     font-size: 40px;
     padding: 0;
-    margin-bottom: 20px;
-    color: #1239e6;
+    /*margin-bottom: 20px;*/
+    color: #4381c0;
 }
 
 .formLogin {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    gap: 15px;
+    /*margin-bottom: 30px;
+    margin-top: 30px;*/
 
 
     max-width: 330px;
@@ -84,7 +84,7 @@
     padding: 10px;
     border: none;
     border-radius: 8px;
-    background-color: #1239e6;
+    background-color: #4381c0;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -95,7 +95,9 @@
     background-color: #5470ec;
 }
 
-
+.logoLogin{
+    width: 20vw;
+}
 
 
 
@@ -127,7 +129,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #b3e6ae;
+    background-color: #4381c0;
     height: 100px;
 }
 
@@ -147,7 +149,7 @@
 }
 
 .nav-left a {
-    color: #1239e6;
+    color: white;
     font-family: "Geom", sans-serif;
     font-weight: 500;
     font-size: 3vh;
@@ -155,7 +157,7 @@
 }
 
 .nav-left a:hover {
-    color: white;
+    color: #0c238a;
 }
 
 .nav-right {
@@ -170,7 +172,7 @@
 }
 
 .nav-right a {
-    color: #1239e6;
+    color: white;
     font-family: "Geom", sans-serif;
     font-weight: 500;
     font-size: 3vh;
@@ -179,7 +181,7 @@
 }
 
 .nav-right a:hover {
-    color: white;
+    color:#0c238a;
 }
 
 .logo1 img {
