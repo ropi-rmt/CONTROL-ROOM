@@ -9,7 +9,7 @@ const form = document.getElementById("loginForm");
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const usuario = document.getElementById("usuario").value;
+    const usuario = document.getElementById("usuario").value.toLowerCase();
     const password = document.getElementById("password").value;
 
     const usuarioValido = usuarios.find(u =>
