@@ -99,8 +99,37 @@
     width: 20vw;
 }
 
+/*DARK MODE*/
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #1b0737;
+    color: white;}
+
+    #color-mode{
+    font-family: "Geom", sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4381c0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#color-mode:hover {
+    background-color:  #1b0737;
+    
+    transition: 0.3s;
 
 
+    
+}
 
 
 
