@@ -124,7 +124,7 @@ body {
 
 #color-mode:hover {
     background-color:  #1b0737;
-    
+    opacity: 85%;
     transition: 0.3s;
 
 
